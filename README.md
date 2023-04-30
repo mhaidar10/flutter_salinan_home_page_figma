@@ -8,8 +8,8 @@ src:
 
 ## images
 <p float="left">
-  <img src="screenshot/gambar_home_page_1.png" width="300" />
-  <img src="screenshot/gambar_home_page_2.png" width="300" /> 
-  <img src="screenshot/gambar_home_page_3.png" width="300" />
+  <img src="screenshot/gambar_home_page_1.png" width="200" />
+  <img src="screenshot/gambar_home_page_2.png" width="200" /> 
+  <img src="screenshot/gambar_home_page_3.png" width="200" />
 </p>
 
