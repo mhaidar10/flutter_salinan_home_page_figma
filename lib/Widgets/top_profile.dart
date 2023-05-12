@@ -1,9 +1,23 @@
 import 'package:flutter/material.dart';
+import 'package:salinan_home_page_figma/datas/grid_item_datas.dart';
+import 'dart:core';
 
 class TopProfile extends StatelessWidget {
   const TopProfile({
     super.key,
   });
+
+  void updatedList(String value) {
+    final cardItem = itemsGrid.where(
+      (element) {
+        final titleLower = element.textGrid.toLowerCase();
+        final searchLower = value.toLowerCase();
+        return titleLower.contains(searchLower);
+      },
+    );
+
+    print(cardItem);
+  }
 
   @override
   Widget build(BuildContext context) {
@@ -29,6 +43,7 @@ class TopProfile extends StatelessWidget {
         Flexible(
           flex: 4,
           child: TextField(
+            onChanged: updatedList,
             decoration: InputDecoration(
               contentPadding: const EdgeInsets.symmetric(horizontal: 20),
               border:

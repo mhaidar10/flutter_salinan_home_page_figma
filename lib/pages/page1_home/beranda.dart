@@ -21,7 +21,8 @@ class Beranda extends StatelessWidget {
     return SingleChildScrollView(
       child: Column(
         children: const [
-          SizedBox(height: 20),
+          SizedBox(height: 50),
+          // ignore: prefer_const_constructors
           TopProfile(),
           SizedBox(height: 20),
           BannerFoto(),
